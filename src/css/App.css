@@ -1,0 +1,52 @@
+/* For the sake of simplicity, normal CSS was used here. In production, this would be a separate file and use a preprocessor. */
+#release-notes {
+  width: 400px;
+}
+#release-notes .popover-body {
+  overflow: hidden;
+  padding: 0px;
+}
+#release-notes-container {
+  overflow: hidden;
+  padding: 0px;
+  width: 548px;
+}
+.release-notes-section {
+  clear: none;
+  float: left;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+  width: 274px;
+}
+.release-notes-list .release-notes-section {
+  transform: translateX(0px);
+}
+.release-notes-note .release-notes-section {
+  transform: translateX(-274px);
+}
+.release-notes-title {
+  border-bottom: 1px solid #bbbbbb;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.release-notes-list-item {
+  box-sizing: border-box;
+  line-height: 1.2em;
+  max-height: calc(3.6em + 16px);
+  overflow: hidden;
+  padding: 8px 16px;
+  text-align: justify;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+}
+.release-notes-list-item:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+#release-notes-content-title:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+#release-notes-content {
+  padding: 8px;
+}
